@@ -1,2 +1,2 @@
 flask==2.2.5  # Outdated version, with known vulnerabilities
-requests==2.19.1  # Outdated version
+requests==2.32.2  # Outdated version
