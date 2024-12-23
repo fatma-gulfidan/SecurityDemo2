@@ -1,9 +1,8 @@
- # vulnerable_script.py
+# Hardcoded API keys and secrets (Secret Scanning vulnerability)
+AWS_ACCESS_KEY_ID = "AKIAIOSFODNN7EXAMPLE"
+AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 
-# Hardcoded secret (example vulnerability)
-API_KEY = "1234567890abcdef"
+def connect_to_aws(access_key, secret_key):
+    print(f"Connecting to AWS with Access Key: {access_key} and Secret Key: {secret_key}")
 
-def connect_to_service(api_key):
-    print(f"Connecting to service with API key: {api_key}")
-
-connect_to_service(API_KEY)
+connect_to_aws(AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
